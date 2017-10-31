@@ -88,7 +88,8 @@ class PageController extends Controller
           DB::table('ahlis')->insert($data);
 
           //Kembali ke halaman senarai users
-          return redirect('daftarAhli');
+          // return redirect('daftarAhli');
+          return redirect()->route('daftarAhli');
     }
 
     /**
